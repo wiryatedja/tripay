@@ -1,7 +1,10 @@
 {
   "name": "wiryatedja/tripay",
   "description": "Tripay PHP Client for Laravel",
-  "keywords": ["laravel", "tripay"],
+  "keywords": [
+    "laravel",
+    "tripay"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -32,6 +35,20 @@
   "config": {
     "sort-packages": true
   },
-  "minimum-stability": "stable",
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Wiryatedja\\Tripay\\TripayServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
   "prefer-stable": true
 }
