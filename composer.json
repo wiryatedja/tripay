@@ -1,0 +1,37 @@
+{
+  "name": "wiryatedja/tripay",
+  "description": "Tripay PHP Client for Laravel",
+  "keywords": ["laravel", "tripay"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wiryatedja",
+      "email": "com.dwicahyo@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1|^8.2",
+    "guzzlehttp/guzzle": "^7.0",
+    "illuminate/support": "^10.0|^11.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.18|^9.0",
+    "phpstan/phpstan": "^1.10",
+    "phpunit/phpunit": "^10.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wiryatedja\\Tripay\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wiryatedja\\Tripay\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
